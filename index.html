@@ -62,6 +62,12 @@
             font-size: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
+        .btn:hover{
+            background-color: white;
+            color: black;
+            transition: 2s;
+            cursor: pointer;
+        }
 
         .Name {
             width: 200px;
@@ -81,8 +87,16 @@
         .review {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             list-style: none;
+            gap: 20px;
+        }
+        .rvw:hover {
+            background-color: white;
+            transition: 2s;
+            cursor: pointer;
+            box-shadow: 0, 5px, 25px;
+
         }
         .rvw {
             width: 260px;
@@ -90,22 +104,44 @@
             border: 20px;
             border-radius: 20px;
             background-color: antiquewhite;
+            text-align: center;
+
         }
         .contact {
             display: flex;
             flex-direction: row;
-            text-align: center;
             align-items: center;
+            list-style: none;
+
         }
         .details {
             display: flex;
             flex-direction: row;
             gap: 30px;
-            padding: 10px;
-            border: 20px black;
-            border-radius: 10px;
+            border: 50px red;
+            border-radius: 30px;
 
         }
+        .copyright {
+            justify-content: center;
+            text-align: center;
+        }
+       /*.transitions {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            animation: move 5s;
+            overflow: hidden;
+        }
+        @keyframes move{
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }*/
     </style>
 </head>
 
@@ -207,6 +243,11 @@
             <li class="contact"> <h4> Address:</h4> <p> Hyderabad</p></li>
             </div>
         </ul>
+    </section>
+    <section>
+        <div class="copyright">
+        <a href="#">Copyright2026</a>
+        </div>
     </section>
 
 </body>
